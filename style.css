@@ -1,0 +1,937 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* mulai */
+:root {
+  --pink: rgb(2, 53, 2);
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  background-color: rgb(0, 8, 0);
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/1.jpg);
+  background-size: cover; /* Menutupi elemen tanpa memotong gambar */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Style tambahan untuk main */
+.hero main {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center horizontally within main */
+  gap: 1rem; /* Add space between elements */
+}
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: var(--shadow);
+}
+
+.hero .invited {
+  width: 500px;
+  height: 130px;
+  background-color: rgba(255, 255, 255, 0.877);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.hero .invited h3 {
+  font-family: "Poppins", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 7rem;
+  margin-top: 20px;
+  color: rgb(121, 83, 26);
+  text-shadow: 2px 2px gold;
+  font-weight: 500;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--pink);
+  background: white;
+  box-shadow: var(--shadow);
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+
+.hero a:hover {
+  background: var(--pink);
+  color: white;
+}
+
+.phone {
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+}
+.phone .home {
+  height: 100vh;
+  background-image: url(img/2.jpg);
+  background-size: cover; /* Menutupi elemen tanpa memotong gambar */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.phone .home .container {
+  background-color: #ffffffb2;
+}
+.home h2 {
+  color: rgb(68, 43, 6);
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  margin-top: 50px;
+}
+.home h3 {
+  font-family: serif;
+  color: #181717;
+  font-size: 1.2rem;
+  margin-bottom: 1 rem;
+  padding: 5px;
+  text-align: center;
+}
+.home .intro {
+  text-indent: 1.5rem; /* Mengatur indentasi pada baris pertama */
+  line-height: 1; /* Memberikan jarak antar baris */
+  font-family: serif;
+  padding: 1px;
+  font-size: 1rem;
+  color: #181717;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.home .couple .right {
+  display: flex;
+  background-color: rgba(253, 253, 253, 0.336);
+  justify-content: end;
+  margin-top: 30px;
+}
+.home .couple .right .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
+}
+.home .couple h3 {
+  color: rgb(94, 63, 7);
+  font-family: "Sacramento", cursive;
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+}
+.home .couple p {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.home .couple .right p label {
+  color: rgb(94, 63, 7);
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  padding-right: 35px;
+}
+.home .couple .right .bottom {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.home .couple .left {
+  display: flex;
+  background-color: rgba(253, 253, 253, 0.336);
+  justify-content: start;
+}
+.home .couple .left .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.home .couple .left .bottom {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.home .couple .left p label {
+  color: rgb(94, 63, 7);
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  padding-left: 35px;
+}
+.home .couple .bottom img {
+  width: 100%;
+}
+.home .couple .center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .couple .center img {
+  width: 30%;
+}
+.home .container .closing {
+  margin-top: 30px;
+  font-family: serif;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1px;
+}
+.info {
+  background-color: rgb(0, 5, 0);
+  color: white;
+  padding-bottom: 10px;
+}
+.info .inf h2,
+.story .heading h2 {
+  color: rgb(175, 106, 2);
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  padding-top: 30px;
+  text-align: center;
+}
+.info .inf .address {
+  margin-top: 20px;
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5; /* Memberikan jarak antar baris */
+  margin-bottom: 10px;
+}
+.info .inf .btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.info .inf .btn button {
+  color: rgb(175, 106, 2);
+  border-radius: 8px;
+  font-family: "Poppins", serif;
+}
+.info .inf .btn button:hover {
+  background-color: rgb(175, 106, 2);
+  color: white;
+}
+.info .inf .description {
+  margin-top: 8px;
+  padding: 4px;
+  font-family: "Poppins", serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.info .akad {
+  background-color: #ffffff25;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: gray solid 2px;
+  border-radius: 10px;
+}
+.info .akad h3 {
+  border-bottom: rgba(128, 128, 128, 0.377) solid 2px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+}
+.info .akad .akad-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgba(128, 128, 128, 0.377) solid 2px;
+}
+.info .akad .akad-container .top {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info .akad .akad-container .top span {
+  margin-top: 5px;
+}
+.info .akad .akad-container .bottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info .akad .akad-container .bottom span {
+  margin-top: 5px;
+}
+.info .akad p {
+  padding: 5px;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.info .resepsi {
+  margin-bottom: 5px;
+}
+.story {
+  height: 100vh;
+  background-color: rgb(251, 253, 238);
+  padding-top: 20px;
+}
+.story .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.story .heading span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.story .heading h2 {
+  padding-top: 0;
+}
+.story .heading p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Poppins", serif;
+}
+.story .timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+.story .timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 2px;
+  background-color: #ccc;
+  left: 15%;
+}
+.story .timeline li::before,
+.story .timeline li::after {
+  content: "";
+  display: table;
+}
+.story .timeline li::after {
+  clear: both;
+}
+.story .timeline li .timeline-image {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  position: absolute;
+  left: 15%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: gray solid 1px;
+  overflow: hidden;
+}
+.story .timeline li .timeline-panel {
+  width: 53%;
+  float: right;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.story .timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 0 solid #ccc;
+  border-right: 15px solid #ccc;
+  border-bottom: 15px solid transparent;
+  left: -15px;
+  right: auto;
+}
+.story .timeline li .timeline-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 0 solid #fff;
+  border-right: 14px solid #fff;
+  border-bottom: 15px solid transparent;
+  top: 33px;
+  left: -13px;
+  right: auto;
+}
+.story .timeline li .timeline-panel .timeline-heading h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.story .timeline li .timeline-panel .timeline-heading span {
+  color: rgb(168, 168, 168);
+  border-bottom: 1px solid rgba(175, 106, 2, 0.473);
+  font-size: 0.8rem;
+}
+.story .timeline li .timeline-panel .timeline-body p {
+  padding-top: 5px;
+  font-size: 1rem;
+  text-align: justify;
+}
+.gallery {
+  background-color: rgb(0, 8, 0);
+  color: rgb(156, 156, 156);
+  padding-bottom: 10px;
+  height: 100vh;
+  padding-top: 40px;
+}
+.gallery .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.gallery .header span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  color: rgba(156, 156, 156, 0.678);
+}
+.gallery .header h2 {
+  color: rgb(209, 127, 5);
+  font-family: "Sacramento", cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 2px solid rgb(209, 127, 5);
+  margin-bottom: 20px;
+}
+.gallery .header p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+}
+
+/* slidebar */
+.slider-container {
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: auto; /* Hindari height fixed */
+  position: relative; /* Dibutuhkan untuk posisi absolut elemen dalam slide */
+  padding-top: 50%; /* Tinggi menjadi 50% dari lebar */
+  overflow: hidden; /* Hindari konten keluar dari batas slide */
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-container .controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-container .controls .control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+.gallery .contain {
+  margin-top: 30px;
+}
+.gallery .contain .contain-galery {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.gallery .contain .contain-galery img {
+  width: 45%;
+  border-radius: 10px;
+}
+.rsvp {
+  height: 50vh;
+  background-color: rgb(251, 253, 238);
+}
+.rsvp .header {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.rsvp .header h2 {
+  color: rgb(177, 108, 5);
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  margin-bottom: 10px;
+}
+.rsvp .header p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  color: gray;
+}
+.rsvp #my-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk elemen label */
+#my-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Gaya untuk elemen input */
+#my-form input,
+#my-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#my-form input:focus {
+  border-color: rgb(177, 108, 5);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Gaya untuk tombol */
+#my-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(177, 108, 5);
+  color: rgb(0, 12, 0);
+  border: none;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Sacramento", cursive;
+}
+
+#my-form button:hover {
+  background-color: rgb(0, 12, 0);
+  color: rgb(177, 108, 5);
+}
+.gifts {
+  background-color: rgb(255, 255, 255);
+}
+.gifts .header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gifts .header span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  color: rgba(105, 105, 105, 0.678);
+}
+.gifts .header h2 {
+  color: rgb(209, 127, 5);
+  font-family: "Sacramento", cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 2px solid rgb(209, 127, 5);
+  margin-bottom: 20px;
+}
+
+.gifts .header p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 1.2;
+}
+
+.gifts .atm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.gifts .card {
+  width: 300px;
+  height: 150px;
+  background-image: url(img/atm.jpg);
+  background-size: cover; /* Menutupi elemen tanpa memotong gambar */
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: gray solid 1px;
+  box-shadow: 10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+}
+.gifts .bca {
+  background-image: url(img/atm2.png);
+}
+.gifts .card .top {
+  font-size: 1.7rem;
+  text-align: end;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #ccc;
+  font-style: italic;
+}
+.gifts .card .center {
+  font-size: 1.1rem;
+  text-align: end;
+  color: #ccc;
+  padding-right: 10px;
+  color: #ccc;
+  font-family: "Poppins", serif;
+}
+.gifts .card .bottom {
+  font-family: "Poppins", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  margin-bottom: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.gifts .card .bottom p {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #ccc;
+  padding-left: 5px;
+}
+footer {
+  width: 100%;
+  background-color: rgb(0, 12, 0);
+  padding: 10px 0;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+footer .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+footer .top a {
+  color: rgb(209, 127, 5);
+  text-decoration: none;
+}
+
+footer .top a:hover {
+  text-decoration: underline;
+}
+
+footer .bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  gap: 15px;
+}
+
+footer .bottom ul li a {
+  color: rgb(209, 127, 5);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+footer .bottom ul li a:hover {
+  color: gold;
+}
+
+footer .bottom ul li a i {
+  font-size: 2rem;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  footer .top {
+    font-size: 0.8rem;
+  }
+
+  footer .bottom ul li a {
+    font-size: 1.5rem;
+  }
+}
+/* ukeran layar hp untuk hero */
+@media (max-width: 500px) {
+  .hero h4 {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+  .hero .invited {
+    width: 350px;
+    height: 80px;
+  }
+  .hero .invited h3 {
+    font-size: 1.5rem;
+  }
+}
