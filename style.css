@@ -213,6 +213,7 @@ body {
   width: 100%;
   background-color: white;
   margin: auto;
+  overflow: hidden;
 }
 .phone .home {
   height: 100vh;
@@ -234,7 +235,7 @@ body {
   text-shadow: var(--shadow);
   margin-top: 50px;
 }
-.home h3 {
+.home .container .top > h3 {
   font-family: serif;
   color: #181717;
   font-size: 1.2rem;
@@ -242,15 +243,16 @@ body {
   padding: 5px;
   text-align: center;
 }
-.home .intro {
+.home .container .top .intro {
   text-indent: 1.5rem; /* Mengatur indentasi pada baris pertama */
-  line-height: 1; /* Memberikan jarak antar baris */
+  line-height: 1.2; /* Memberikan jarak antar baris */
   font-family: serif;
-  padding: 1px;
+  padding: 2px;
   font-size: 1rem;
   color: #181717;
   padding: 5px;
   margin-top: 10px;
+  text-align: justify;
 }
 
 .home .couple .right {
@@ -265,7 +267,7 @@ body {
   justify-content: center;
   text-align: end;
 }
-.home .couple h3 {
+.home .container .couple h3 {
   color: rgb(94, 63, 7);
   font-family: "Sacramento", cursive;
   font-size: 2.4rem;
@@ -429,9 +431,9 @@ body {
   margin-bottom: 5px;
 }
 .story {
-  height: 100vh;
   background-color: rgb(251, 253, 238);
   padding-top: 20px;
+  padding-bottom: 5px;
 }
 .story .heading {
   display: flex;
@@ -548,7 +550,6 @@ body {
   background-color: rgb(0, 8, 0);
   color: rgb(156, 156, 156);
   padding-bottom: 10px;
-  height: 100vh;
   padding-top: 40px;
 }
 .gallery .header {
@@ -674,8 +675,8 @@ body {
   border-radius: 10px;
 }
 .rsvp {
-  height: 50vh;
   background-color: rgb(251, 253, 238);
+  padding-bottom: 15px;
 }
 .rsvp .header {
   padding-top: 25px;
@@ -916,12 +917,16 @@ footer .bottom ul li a i {
 }
 /* ukeran layar hp untuk hero */
 @media (max-width: 500px) {
+  .hero {
+    height: 100vh;
+    overflow: hidden;
+  }
   .hero h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
   .hero p {
@@ -933,5 +938,48 @@ footer .bottom ul li a i {
   }
   .hero .invited h3 {
     font-size: 1.5rem;
+  }
+  .phone .home .container h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .phone .home .container .intro {
+    font-size: 0.8rem;
+    font-family: "Poppins", serif;
+  }
+
+  .home .container .couple h3 {
+    font-family: "Sacramento", cursive;
+    font-size: 1.5rem;
+  }
+  .home .container .couple p {
+    font-size: 0.9rem;
+    font-family: "Poppins", serif;
+  }
+  .home .container .couple p label {
+    font-size: 0.9rem;
+  }
+  .home .container .closing {
+    font-size: 0.8rem;
+    font-family: "Poppins", serif;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  .info .inf h2 {
+    font-size: 3rem;
+  }
+  .story .timeline li .timeline-panel {
+    width: 45%;
+  }
+  .gallery .header h2 {
+    font-size: 3rem;
+  }
+  .gallery .header p {
+    padding: 3px;
+    font-size: 0.7rem;
+  }
+  .rsvp .header h2 {
+    font-size: 2.5rem;
   }
 }
