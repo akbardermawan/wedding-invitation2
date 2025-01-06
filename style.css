@@ -216,13 +216,12 @@ body {
   overflow: hidden;
 }
 .phone .home {
-  height: 100vh;
   background-image: url(img/2.jpg);
   background-size: cover; /* Menutupi elemen tanpa memotong gambar */
   background-position: center;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
 }
 .phone .home .container {
   background-color: #ffffffb2;
