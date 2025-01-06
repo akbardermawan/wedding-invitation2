@@ -225,6 +225,7 @@ body {
 }
 .phone .home .container {
   background-color: #ffffffb2;
+  padding-bottom: 20px;
 }
 .home h2 {
   color: rgb(68, 43, 6);
@@ -232,7 +233,7 @@ body {
   font-size: 4rem;
   font-weight: bold;
   text-shadow: var(--shadow);
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .home .container .top > h3 {
   font-family: serif;
@@ -283,7 +284,7 @@ body {
   padding-right: 35px;
 }
 .home .couple .right .bottom {
-  width: 40%;
+  width: 55%;
   overflow: hidden;
   border-radius: 50%;
   margin-left: 10px;
@@ -301,7 +302,7 @@ body {
   text-align: start;
 }
 .home .couple .left .bottom {
-  width: 40%;
+  width: 45%;
   overflow: hidden;
   border-radius: 50%;
   margin-right: 10px;
@@ -325,7 +326,7 @@ body {
   width: 30%;
 }
 .home .container .closing {
-  margin-top: 30px;
+  margin-top: 25px;
   font-family: serif;
   text-align: center;
   font-size: 1.2rem;
@@ -939,7 +940,7 @@ footer .bottom ul li a i {
     font-size: 1.5rem;
   }
   .phone .home .container h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
   }
 
